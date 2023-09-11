@@ -28,6 +28,14 @@ input:focus {
   font-weight: 700;
 }
 
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
 .page {
   inline-size: 1200px;
   block-size: 100%;
@@ -183,38 +191,28 @@ ol {
   border: 0;
 }
 
-/* .search-form__fieldset-title {
-  padding-bottom: 5px;
-} */
-
 .search-form__label {
   display: flex;
   width: fit-content;
-  padding-top: 5px;
-}
-
-.search-form__label:focus-visible {
-  border: 2px solid #fff;
-  outline-offset: 2px;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .search-form__textfield {
   min-width: 225px;
-  border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  border-right: none;
+  margin: 2px;
 }
 
-.search-form__textfield:active {
-  border: 1px solid #fff;
-}
-
-.search-form__textfield:has(:focus-visible) {
+/* .search-form__textfield:has(:focus-visible) {
   outline: 1px solid #fff;
-}
+} */
 
 .search-form__label:not(last-child) {
-  padding-right: 16px;
+  margin-right: 16px;
 }
 
 .search-form__checkbox-list {
@@ -249,30 +247,17 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
   background-color: #fff;
 }
 
-/* .search-form__label-text:focus-visible {
+.search-form__label:hover {
   text-decoration: underline;
-} */
+}
 
-/* .search-form__pseudo-checkbox::after {
-  content: '';
-  background-color: #fff;
-  width: 18px;
-  height: 18px;
-} */
+.search-form__label:has(.search-form__textfield):hover {
+  text-decoration: none;
+}
 
-/* input[type='checkbox'] + span {
-  height: 19px;
-  width: 19px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  cursor: pointer;
-} */
-
-/* .search-form__label-text:ho */
-
-/* input[type='checkbox']:focus-visible + span {
-  border: 1px solid #fff;
-} */
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
 
 .search-form__submit-button {
   min-width: 194px;
@@ -283,15 +268,6 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
 
 .search-form__submit-button:active {
   background: #545050;
-}
-
-.search-form__submit-button:hover {
-  text-decoration: underline;
-}
-
-.search-form__submit-button:focus {
-  text-decoration: underline;
-  outline: 1px solid #fff;
 }
 
 .more-button {

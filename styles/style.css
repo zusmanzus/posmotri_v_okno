@@ -147,13 +147,6 @@ input:focus {
   gap: 26px;
 }
 
-.content__video-card {
-  /* background-color: #545050; */
-  /* display: flex;
-  flex-direction: row; */
-  /* max-height: 103px; */
-}
-
 .content__video-card-title {
   font-size: 30px;
   font-weight: 700;
